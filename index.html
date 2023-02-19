@@ -5,38 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d70107721.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
-        <div class="navbar"><div class="search">
-            <label for="search"></label>
+<div class="header">
+    <div class="navbar">
+        <div class="search">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
             <input type="search" name="search" id="search">
+        </div>
+        <div class="nav-right">
+            <img id="bell" src="/Material/bell.png" />
+            <img src="https://i.kym-cdn.com/entries/icons/medium/000/037/146/PagMan.png" />
+            <div>Morgan Oakley</div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-left">
+            <img src="https://i.kym-cdn.com/entries/icons/medium/000/037/146/PagMan.png" />
+            <div>Hi there,</div>
+           <div id="name">Morgan Oakley (@morgan)</div>
+        </div>
+        <div class="hero-right">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
         </div>
     </div>
 </div>
-<div class="hero">
-    <div class="hero-left"></div>
-    <div class="hero-right"></div>
-</div>
+
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="logo">
-            Dashboard
+            <img src="https://i.kym-cdn.com/entries/icons/medium/000/037/146/PagMan.png" />  Dashboard
         </div>
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+        <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa-solid fa-house"></i></span>Home</li>
+            <li><span class="fa-li"><i class="fa-regular fa-address-card"></i></span>Profile</li>
+            <li><span class="fa-li"><i class="fa-solid fa-message"></i></span>Messages</li>
+            <li><span class="fa-li"><i class="fa-regular fa-clock"></i></span>History</li>
+            <li><span class="fa-li"><i class="fa-solid fa-list-check"></i></span>Tasks</li>
+            <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>Communities</li>
         </ul>
-        <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+        <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa-solid fa-gear"></i></span>Settings</li>
+            <li><span class="fa-li"><i class="fa-solid fa-house"></i></span>Support</li>
+            <li><span class="fa-li"><i class="fa-solid fa-house"></i></span>Privacy</li>
         </ul>
     </div>
     <!-- Main Content -->
