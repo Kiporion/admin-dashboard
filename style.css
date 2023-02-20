@@ -7,6 +7,10 @@
     font-family: Roboto;
     src: url(./Material/Roboto/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: RobotoBlack;
+    src: url(./Material/Roboto/Roboto-Black.ttf);
+}
 body{
     margin: 0;
     padding: 0;
@@ -20,16 +24,20 @@ img{
     height: 40px;
 }
 #bell{
-    height: 20px;
+    height: 24px;
 }
 
+button{
+    cursor: pointer;
+}
 
 /* Header */
 .header{
     grid-column: 2/3;
-    box-shadow: 0px 5px 5px -5px rgb(97, 97, 97);
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow:  0 10px 15px -3px rgb(0 0 0 / 0.1);
+    z-index: 3;
 }
 /* Top Header */
 
@@ -61,31 +69,40 @@ input[type="search"]{
     gap: 2vw;
 }
 
+.iconbtn{
+    border: none;
+    background-color: white;
+}
 
 /* Bottom Header */
 
 .hero{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     margin-top: 5px;
     font-weight: bold;
 }
 
 .hero-left{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 2fr;
 }
 .hero-left img{
     grid-row: span 2;
-    height: 50px;
+    height: 60px;
+    width: 60px;
     margin-left: 2vw;
+    margin-right: 5px;
+    border-radius: 50%;
 }
+
 
 #name{
     padding-top: 1%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: RobotoBlack;
 }
 
 .hero-right{
@@ -96,11 +113,12 @@ input[type="search"]{
 }
 
 
-button{
+.control{
     background-color: var(--blue);
     color: white;
     border: none;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 /* Sidebar */
@@ -110,6 +128,27 @@ button{
     color: white;
     padding: 2vw;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.logo img{
+    margin-right: 1ch;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+.fa-ul{
+  font-size: 1.2rem;
+  margin-top: 3.25rem;
+  display: grid;
+  gap: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /* Main Content */
@@ -120,6 +159,7 @@ button{
     grid-template-rows: 1fr 1fr;
     gap:10px;
     background-color: #E2E8F0;
+    padding-left: 10px;
 }
 
 .main-left{
@@ -165,6 +205,7 @@ button{
 }
 .mini img{
     height: 30px;
+    cursor: pointer;
 }
 
 /* Main Right Side */
@@ -220,7 +261,7 @@ ul{
     margin-top: 1.5rem;
   }
 
-  .trend .picture {
+.picture {
     border-radius: 50%;
     width: 45px;
     height: 45px;
